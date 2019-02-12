@@ -2,7 +2,7 @@ This is a collection of accuracy enhanced ddot variants. The algorithms can be
 employed to any reduction algorithm. The implementations are proof-of-concept
 and not intended to be used for production purposes.
 
-For more informations you may have a look at:
+For more information you may have a look at:
 
 J. Hofmann, D. Fey, M. Riedmann, J. Eitzinger, G. Hager, and G. Wellein:
 Performance analysis of the Kahan-enhanced scalar product on current multi- and

@@ -227,7 +227,7 @@ ddot_kahan_avx2_asm:
 ###         sum = t;
 ###     }
 ### 
-###     /* perform scalar Kahan sum of loop remainer */
+###     /* perform scalar Kahan sum of loop remainder */
 ### #pragma novector
 ###     for (i=N-rem; i<N; ++i) {
 

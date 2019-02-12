@@ -106,7 +106,7 @@ double ddot_kahan_avx_intrin(
         sum = t;
     }
 
-    /* perform scalar Kahan sum of loop remainer */
+    /* perform scalar Kahan sum of loop remainder */
 #pragma novector
     for (i=N-rem; i<N; ++i) {
         double prod = a[i]*b[i];
