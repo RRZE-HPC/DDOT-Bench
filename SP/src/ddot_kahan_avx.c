@@ -29,13 +29,13 @@ float ddot_kahan_avx(
 
     /* use four way unrolling */
     for (i=0; i<N-rem; i+=32) {
-        /* load 4x4 floats into four vector registers */
+        /* load 4x8 floats into four vector registers */
         a1 = _mm256_loadu_ps(&a[i]);
         a2 = _mm256_loadu_ps(&a[i+8]);
         a3 = _mm256_loadu_ps(&a[i+16]);
         a4 = _mm256_loadu_ps(&a[i]+24);
 
-        /* load 4x4 floats into four vector registers */
+        /* load 4x8 floats into four vector registers */
         b1 = _mm256_loadu_ps(&b[i]);
         b2 = _mm256_loadu_ps(&b[i+8]);
         b3 = _mm256_loadu_ps(&b[i+16]);
