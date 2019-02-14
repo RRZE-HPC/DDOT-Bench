@@ -95,7 +95,7 @@ void ddot_kahan_scalar_intrin(
     _mm_store_sd(&sum, sum1);
     _mm_store_sd(&c, c1);
 
-    /* perform scalar Kahan sum of loop remainer */
+    /* perform scalar Kahan sum of loop remainder */
 #pragma novector
     for (i=N-rem; i<N; ++i) {
         double prod = a[i]*b[i];
